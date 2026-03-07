@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./asset/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    < <header>
+        <div class="header__name">
+            <a href="./index.html">
+                <span class="status-dot"></span>
+                <p style="font-size: 28px; ">Vu An Binh</p>
+            </a>
+            <p style="color: #333333B3;">FE Developer</p>
+        </div>
+        <div class="header__tab">
+            <a href="/index.html" style="border-right: 1px solid #333; padding: 5px 10px;">Home</a>
+            <a href="/ResumePage.html" >Resume</a>
+            <a href="/Project.html" style="border-inline: 1px solid #333; padding: 5px 10px;">Projects</a>
+            <a href="/Contact.html">Contact</a>
+        </div>
+    </header>
+
+    <div class="project__container">
+        <h1 style="text-align: center;">Project</h1>
+        <h1 style="margin-bottom: 20px;">Design & Development Process</h1>
+        <div class="project__info">
+            <div class="project__details">
+                <h2> Project Overview</h2>
+                    <p><strong>Project Name:</strong> Coffee Shop E-commerce Website</p>
+                    <p><strong>Role:</strong> Frontend Developer & UI/UX Designer</p>
+                    <ul><strong><p>Tools & Technologies:</p></strong>
+                        <li>Design: Figma.</li>
+                        <li>Frontend: React.js, SCSS Modules.</li>
+                        <li>Backend & Cloud: Node.js, Express, MongoDB, Cloudinary API.</li>
+                    </ul>
+                    <ul> <strong><p>Links:</p></strong>
+                        <li>Link Demo: <a href="https://coffee-shop-website-tan.vercel.app">https://coffee-shop-website-tan.vercel.app</a></li>
+                        <li>Link Github: <a href="https://github.com/vab2410tb-ui/coffee-shop-website">https://github.com/vab2410tb-ui/coffee-shop-website</a></li>
+                    </ul>
+        
+            </div>
+
+
+            <div class="project__img">
+                <img src="/asset/img/demo.png" width="500" style="border-radius: 20px;">
+            </div>
+        </div>
+        
+        <div class="project__design">
+            <div style="flex: 60%;">
+                <h2>Design System</h2>
+                <p>A consistent design system was created to maintain visual harmony and improve user experience across the application.</p>
+                <ul><strong><p>Color Palette</p></strong>
+                    <li>#FFFFFF – Primary background color</li>
+                    <li>#F2F2F2 – Secondary background / section background</li>
+                    <li>#333333 – Primary text color</li>
+                </ul>
+                <p>These neutral tones create a clean, modern, and minimal interface suitable for an online coffee shop.</p>
+                <ul><strong><p>Typography</p></strong>
+                    <li>Clear hierarchy for headings, product titles, and body text</li>
+                    <li>Designed to improve readability and visual balance.</li>
+                </ul>
+                <ul><strong><p>Components</p></strong>
+                    <p>Reusable UI components were designed including:</p>
+                    <li>Button</li>
+                    <li>Input field</li>
+                    <li>Product Card</li>
+                    <li>Navigation bar</li>
+                    <li>Shopping cart item</li>
+                </ul>
+            </div>
+            <div style="display: flex; gap:10px; flex: 40%;align-items: center;">
+                <img src="./asset/img/img-design/home-figma.PNG" width="250" height="350" style="border-radius: 10px;">
+                <img src="./asset/img/img-design/espresso-machine.PNG"width="250" height="350" style="border-radius: 10px;" alt="">
+            </div>
+        </div>
+
+         <div class="project__feature">
+            <h2>Key Features</h2>
+            <div class="swapper_viewport">
+                <div class="swapper_slide">
+                    <img src="/asset/img/img-fea/login.png" style="border-radius: 20px;" alt="Login">
+                    <img src="/asset/img/img-fea/logout.png" style="border-radius: 20px;"  alt="Logout">
+                    <img src="/asset/img/img-fea/cart.png" style="border-radius: 20px;" alt="Cart">
+                    <img src="/asset/img/img-fea/cartpage.png" style="border-radius: 20px;" alt="Cart">
+                    <img src="./asset/img/img-fea/tracking-order.png" style="border-radius: 20px;" alt="Tracking">
+                    <img src="/asset/img/img-fea/login.png" style="border-radius: 20px;" alt="Login">
+                </div>
+            </div>
+            <div class="project__text" >
+                <ul><strong><p>The platform provides several core e-commerce functionalities:</p></strong>
+                    <li>Advanced Product Filtering: Implementing a sophisticated filtering system that utilizes Enum validation (e.g., espresso-machine, bean) to ensure strict data integrity and consistency between the Backend and Frontend.</li>
+                    <li>Smart Search: A high-performance search functionality supporting instantaneous lookups by both Product Name and SKU, streamlining the navigation process for both users and administrators.</li>
+                    <li>Shopping cart management</li>
+                    <li>Order placement</li>
+                    <li>Order Lookup & Tracking: A dedicated tracking system that allows customers to retrieve real-time order status using their Order ID and Email, powered by direct queries to the MongoDB database.</li>
+                    <li>User authentication (Login / Logout)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project__design">
+            <div style="flex: 60%;">
+                <h2>Future Enhancements</h2>
+                <p><strong>Cross-Device Optimization:</strong></p>
+                <p style="margin-left: 50px;">Implementing a Mobile-First responsive design using CSS Grid and Flexbox to ensure a seamless experience on tablets and smartphones (e.g., iPhone, iPad).</p>
+                <p><strong>UI Refinement:</strong></p>
+                <p style="margin-left: 50px;">Enhancing touch-screen interactions and navigation menus for better mobile accessibility.</p>
+            </div>
+        </div>
+
+        <div class="project__design">
+            <div style="flex: 60%;">
+                <h2>Development Process</h2>
+                <p><strong>UI/UX Design:</strong></p>
+                <p style="margin-left: 50px;">Designed high-fidelity UI screens and interactive prototypes in Figma before development.</p>
+                <p><strong>Frontend Development:</strong></p>
+                <p style="margin-left: 50px;">Built a responsive user interface using React.js and SCSS Modules. Implemented reusable components and dynamic product rendering.</p>
+                <p><strong>Backend Integration:</strong></p>
+                <p style="margin-left: 50px;">Connected the frontend with RESTful APIs built using Node.js and Express.js to manage products, orders, and user authentication.</p>
+                <p><strong>Media Management:</strong></p>
+                <p style="margin-left: 50px;">Designed high-fidelity UI screens and interactive prototypes in Figma before development.</p>
+            </div> 
+        </div>
+
+        <div class="project__design">
+            <div style="flex: 60%;">
+                <h2>Challenges & Solutions</h2>
+                <p><strong>Secure API Management:</strong></p>
+                <p style="margin-left: 50px;">Resolved Cloudinary credential vulnerabilities and "api_secret" errors by implementing strict environment variable configurations for secure asset handling.</p>
+                <p><strong>Data Integrity & Order Logic:</strong></p>
+                <p style="margin-left: 50px;">Prevented corrupted orders by enforcing Mongoose Schema Enums, resolving "Product validation failed" errors to ensure data consistency.</p>
+                <p><strong>Multi-Criteria Search Engine:</strong></p>
+                <p style="margin-left: 50px;">Engineered a robust search system supporting simultaneous SKU and Name-based queries, overcoming complex sorting and filtering logic bugs.</p>
+                <p><strong>Database Connectivity:</strong></p>
+                <p style="margin-left: 50px;">Stabilized the backend by debugging Mongoose connection strings and "db.connect" errors, ensuring 100% reliability for data persistence.</p>
+                <p><strong>State & Sync Management:</strong></p>
+                <p style="margin-left: 50px;">Eliminated "undefined" property errors in the Shopping Cart and Order Tracking by refining React state logic and defensive programming.</p>
+            </div>
+        </div>
+
+    </div>
+        
+
+    <div style="padding-bottom: 100px; border-bottom: 1px solid #333333b3;"></div>
+    <footer>
+        <div class="footer__format">
+            <h3> <i class="fa-solid fa-phone"></i> Phone</h3>
+            <p>+84 973219402</p>
+        </div>
+        <div class="footer__format">
+            <h3> <i class="fa-regular fa-envelope"></i> Email</h3>
+            <p>vab2410tb@gmail.com</p>
+        </div>
+        <div class="footer__format"> 
+            <h3> <i class="fa-brands fa-github"></i> Github</h3>
+            <a href="https://github.com/vab2410tb-ui">https://github.com/vab2410tb-ui</a>
+        </div>
+    </footer>
+</body>
+</html>
