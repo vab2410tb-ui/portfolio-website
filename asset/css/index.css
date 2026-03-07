@@ -297,7 +297,7 @@ footer .footer__format {
 .swapper_slide {
     display: flex;
     width: 600%;          
-    animation: coffeeSlider 13s  ease-in-out; 
+    animation: coffeeSlider 13s ease-in-out infinite; 
 }
 
 .swapper_slide img {    
@@ -437,4 +437,218 @@ footer .footer__format {
     0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); }
     70% { box-shadow: 0 0 0 8px rgba(40, 167, 69, 0); }
     100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); }
+}
+
+/* RESPONSIVE DESIGN (TABLET & MOBILE) */
+
+/* 1. Global Fixes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- TABLET (Màn hình dưới 1024px) --- */
+@media (max-width: 1024px) {
+    /* Header */
+    header { 
+        padding-inline: 20px; 
+    }
+
+    /* Home Page */
+    .main__intro {
+        height: auto;
+    }
+    .main__intro .main__intro-1 { 
+        margin-inline: 50px; 
+        gap: 30px;
+    }
+    .main__intro .main__intro-2 { 
+        margin-inline: 50px; 
+    }
+    .main__intro h1 { 
+        font-size: 80px; /* Thu nhỏ font chữ lớn */
+    }
+    .main__intro img { 
+        height: 450px; 
+    }
+    .main__intro-2 p { 
+        margin-left: 0; 
+        font-size: 24px; 
+    }
+
+    /* Resume Page */
+    .resume__container { 
+        margin-inline: 50px; 
+    }
+    .resume__education, .resume__skill { 
+        padding-inline: 50px; 
+    }
+
+    /* Project Page */
+    .project__container { 
+        margin-inline: 50px; 
+    }
+    .project__info, .project__design, .project__feature { 
+        margin-inline: 50px; 
+    }
+    .project__details h2, .project__design h2, .project__feature h2 { 
+        margin-left: -50px; /* Giảm độ lệch của heading */
+    }
+}
+
+/* --- MOBILE (Màn hình dưới 768px) --- */
+@media (max-width: 768px) {
+    /* Header - Chuyển thành dạng cột trên mobile */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+        align-items: center;
+    }
+    .header__tab a { 
+        font-size: 16px; 
+        padding: 5px !important; 
+    }
+
+    .main__intro {
+        margin-top: 130px;
+        padding-bottom: 50px;
+    }
+
+    /* Home Page */
+    .main__intro .main__intro-1 {
+        flex-direction: column;
+        margin-inline: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .main__intro h1 { 
+        font-size: 55px; 
+        line-height: 1.1; 
+        margin-top: 10px; 
+    }
+    .main__intro span { 
+        font-size: 24px; 
+    }
+    .main__intro img { 
+        width: 100%; 
+        max-width: 350px; 
+    }
+    
+    .main__intro .main__intro-2 {
+        margin-inline: 20px;
+        text-align: center;
+    }
+    .main__intro-2 h3 { 
+        font-size: 32px; 
+        margin-bottom: 15px; 
+    }
+    .main__intro-2 p { 
+        font-size: 18px; 
+        text-align: center;
+        
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 25px;
+        padding: 30px 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__format h3 { 
+        font-size: 22px; 
+    }
+
+    /* Resume Page */
+    .resume__container { 
+        margin-inline: 20px; 
+    }
+    .resume__education, .resume__skill {
+        flex-direction: column;
+        padding-inline: 20px;
+        gap: 20px;
+    }
+    .resume__education h2, .resume__skill h2 { 
+        flex: 100%; 
+    }
+    .resume__education-details { 
+        flex-direction: column; 
+        gap: 5px; 
+        margin-bottom: 25px; 
+    }
+
+    /* Project Page */
+    .project__container { 
+        margin-inline: 20px; 
+    }
+    .project__info, .project__design, .project__feature { 
+        margin-inline: 0px; 
+    }
+    .project__info { 
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    
+    .project__details h2, .project__design h2, .project__feature h2 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 24px;
+    }
+    
+    .project__design {
+        flex-direction: column;
+    }
+    
+    .project__design > div[style*="flex: 40%"] {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .project__details > ul li, 
+    .project__design > div ul li, 
+    .project__text li, 
+    .project__design p[style*="margin-left"] {
+        margin-left: 20px !important;
+    }
+    
+    /* Slider */
+    .project__feature .swapper_viewport { 
+        width: 100%; 
+    }
+
+    /* Contact Page */
+    .contact-section { 
+        padding: 150px 20px 100px; 
+    }
+    .contact__glass-box { 
+        padding: 40px 20px; 
+    }
+    .contact__title { 
+        font-size: 24px; 
+    }
+    .contact__subtitle { 
+        font-size: 15px; 
+    }
+}
+
+/* --- SMALL MOBILE (Màn hình nhỏ dưới 480px) --- */
+@media (max-width: 480px) {
+    .header__name p { 
+        font-size: 22px !important; 
+    }
+    .header__tab a { 
+        font-size: 13px; 
+    }
+    .main__intro h1 { 
+        font-size: 42px; 
+    }
+    .contact__item { 
+        flex-direction: column; 
+        gap: 8px; 
+        text-align: center; 
+    }
 }
