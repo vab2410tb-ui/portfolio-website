@@ -136,13 +136,13 @@ footer .footer__format {
 /* ======= BEGIN LAYOUT RESUME ======== */
 
 .resume__container {
-    margin-top: 100px;
+    margin-top: 90px;
     margin-inline: 100px;
     
 }
 
 .resume__container h1 {
-    margin-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 .resume__education {
@@ -150,7 +150,7 @@ footer .footer__format {
     margin-top: 100px;
     align-items: start;
     border-bottom: 1px solid #333333B3;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     padding-inline: 200px;
 }
 
@@ -184,7 +184,7 @@ footer .footer__format {
     margin-top: 100px;
     display: flex;
     align-items: start;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     padding-inline: 200px;
 }
 
@@ -202,7 +202,7 @@ footer .footer__format {
 
 /* ======= END LAYOUT RESUME ======== */
 
-/* ======= END LAYOUT RESUME ======== */
+/* ======= BEGIN LAYOUT PROJECT ======== */
 .project__container {
     margin-top: 100px;
     margin-inline: 100px;
