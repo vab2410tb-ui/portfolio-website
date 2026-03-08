@@ -136,7 +136,7 @@ footer .footer__format {
 /* ======= BEGIN LAYOUT RESUME ======== */
 
 .resume__container {
-    margin-top: 90px;
+    margin-top: 100px;
     margin-inline: 100px;
     
 }
@@ -565,7 +565,11 @@ img {
 
     /* Resume Page */
     .resume__container { 
+        padding-top: 20px;
         margin-inline: 20px; 
+    }
+    .resume__container > h1 {
+        text-align: center;
     }
     .resume__education, .resume__skill {
         flex-direction: column;
@@ -583,6 +587,7 @@ img {
 
     /* Project Page */
     .project__container { 
+        padding-top: 20px;
         margin-inline: 20px; 
     }
     .project__info, .project__design, .project__feature { 
@@ -650,5 +655,9 @@ img {
         flex-direction: column; 
         gap: 8px; 
         text-align: center; 
+    }
+    .contact__status span {
+        display: none;
+
     }
 }
